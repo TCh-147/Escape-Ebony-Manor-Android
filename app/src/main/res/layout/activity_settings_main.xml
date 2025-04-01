@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_blue"
+    tools:context=".SettingsMain">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/settings"
+        android:fontFamily="@font/quietscaryfont"
+        android:textColor="#F4F4F4"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back_settings"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00DBDBDB"
+        android:text="@string/btn_back_symbol"
+        android:fontFamily="@font/champagne"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save_settings"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/accent_yellow"
+        android:drawableTint="@color/accent_yellow"
+        android:text="@string/btn_save"
+        android:fontFamily="@font/champagne"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="279dp"
+        android:layout_height="361dp"
+        android:background="@color/dark_blue"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="82dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/quietscaryfont"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/sound"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="70"
+                android:progressTint="@color/accent_yellow"
+                android:thumbTint="@color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="226dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/quietscaryfont"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/music"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:checked="true"
+                android:paddingRight="10dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumbTint="@color/accent_yellow"
+                android:trackTint="@color/accent_yellow"
+                tools:checked="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/quietscaryfont"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/notifications"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:checked="false"
+                android:paddingRight="10dp"
+                android:shadowColor="@color/black"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:trackTint="@color/accent_yellow" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/quietscaryfont"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/hints"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:checked="true"
+                android:paddingRight="10dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumbTint="@color/accent_yellow"
+                android:trackTint="@color/accent_yellow" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

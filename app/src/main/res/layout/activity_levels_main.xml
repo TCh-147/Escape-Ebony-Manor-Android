@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_blue"
+    tools:context=".LevelsMain">
+
+    <Button
+        android:id="@+id/btn_back_levels"
+        android:layout_width="99dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/black_blue"
+        android:text="@string/btn_back_symbol"
+        android:fontFamily="@font/champagne"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/quietscaryfont"
+        android:text="@string/levels"
+        android:textColor="#F4F4F4"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="7">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_passed_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv1"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_passed_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv2"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_unlocked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv3"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_4"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv4"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_5"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv5"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_6"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv6"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_7"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv7"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_8"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv8"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_9"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv9"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_10"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv10"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_11"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv11"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_12"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv12"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_13"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv13"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_14"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv14"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_15"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv15"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_16"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv16"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_17"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv17"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_18"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv18"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_19"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv19"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_20"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv20"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_21"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv21"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_22"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv22"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_level_23"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/square_btn_shape_locked_level"
+                android:fontFamily="@font/quietscaryfont"
+                android:text="@string/lv23"
+                android:textColor="@color/light_grey"
+                android:textSize="25sp" />
+        </GridLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="415dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-5dp"
+        android:contentDescription="@string/ad_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

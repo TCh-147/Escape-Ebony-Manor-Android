@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Ebony\nManor</string>
+    <string name="escape">escape</string>
+    <string name="play">Play</string>
+    <string name="more_levels">More levels</string>
+    <string name="settings">Settings</string>
+    <string name="sound">Sound</string>
+    <string name="music">Music</string>
+    <string name="notifications">Notifications</string>
+    <string name="hints">Hints</string>
+    <string name="inventory">Items</string>
+    <string name="levels">Levels</string>
+
+
+    <string name="btn_save">Save</string>
+    <string name="btn_back_symbol">&lt;&lt;</string>
+    <string name="btn_left_symbol">&lt;</string>
+    <string name="btn_right_symbol">&gt;</string>
+
+
+    <string name="lv1">1</string>
+    <string name="lv2">2</string>
+    <string name="lv3">3</string>
+    <string name="lv4">4</string>
+    <string name="lv5">5</string>
+    <string name="lv6">6</string>
+    <string name="lv7">7</string>
+    <string name="lv8">8</string>
+    <string name="lv9">9</string>
+    <string name="lv10">10</string>
+    <string name="lv11">11</string>
+    <string name="lv12">12</string>
+    <string name="lv13">13</string>
+    <string name="lv14">14</string>
+    <string name="lv15">15</string>
+    <string name="lv16">16</string>
+    <string name="lv17">17</string>
+    <string name="lv18">18</string>
+    <string name="lv19">19</string>
+    <string name="lv20">20</string>
+    <string name="lv21">21</string>
+    <string name="lv22">22</string>
+    <string name="lv23">23</string>
+
+
+    <string name="ad_desc">Ad</string>
+    <string name="main_background_desc">Night with a big moon behind the shadow of a grand manor</string>
+    <string name="inventory_slot_desc">Inventory slot for items</string>
+    <string name="level_three_image_description">Level 3 of the game</string>
+    <string name="level_four_image_description">Level 4 of the game</string>
+    <string name="level_five_image_description">Level 5 of the game</string>
+
+
+</resources>
